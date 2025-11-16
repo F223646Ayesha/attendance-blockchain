@@ -1,0 +1,245 @@
+{
+  "departments": {
+    "SE": {
+      "deptName": "SE",
+      "chain": [
+        {
+          "index": 0,
+          "timestamp": 1763221476166,
+          "transactions": {
+            "type": "GENESIS",
+            "chain": "SE"
+          },
+          "prev_hash": "",
+          "nonce": 31845,
+          "hash": "0000e6da2309ae675db7faaa287a7e2877d3f1db56b1e41425c845cbfd2d15bb"
+        }
+      ],
+      "classes": {
+        "7B": {
+          "className": "7B",
+          "chain": [
+            {
+              "index": 0,
+              "timestamp": 1763221482919,
+              "transactions": {
+                "type": "GENESIS_CLASS",
+                "class": "7B"
+              },
+              "prev_hash": "0000e6da2309ae675db7faaa287a7e2877d3f1db56b1e41425c845cbfd2d15bb",
+              "nonce": 33564,
+              "hash": "0000e00017680c2b2ce91f4585af9bd2fa8bdf3eb3237d37f880bd5296aaeed1"
+            }
+          ],
+          "students": {
+            "f223646": {
+              "student": {
+                "name": "Ayesha",
+                "roll": "f223646"
+              },
+              "chain": [
+                {
+                  "index": 0,
+                  "timestamp": 1763221528835,
+                  "transactions": {
+                    "type": "GENESIS_STUDENT",
+                    "student": {
+                      "name": "Ayesha",
+                      "roll": "f223646"
+                    }
+                  },
+                  "prev_hash": "0000e00017680c2b2ce91f4585af9bd2fa8bdf3eb3237d37f880bd5296aaeed1",
+                  "nonce": 87346,
+                  "hash": "0000d6934d9beb1065dd7b69b5f27a599b7ae3a04b7d226e2b22ee142f6b8eba"
+                },
+                {
+                  "index": 1,
+                  "timestamp": 1763221529074,
+                  "transactions": {
+                    "type": "STUDENT_ADD",
+                    "roll": "f223646",
+                    "name": "Ayesha"
+                  },
+                  "prev_hash": "0000d6934d9beb1065dd7b69b5f27a599b7ae3a04b7d226e2b22ee142f6b8eba",
+                  "nonce": 32223,
+                  "hash": "00005775777c0ffac9b911c304214400df2038e84623ccc7132714008362207c"
+                },
+                {
+                  "index": 2,
+                  "timestamp": 1763222996031,
+                  "transactions": {
+                    "type": "ATTENDANCE_MARK",
+                    "roll": "f223646",
+                    "deptName": "SE",
+                    "className": "7B",
+                    "status": "Present",
+                    "timestamp": 1763222996031
+                  },
+                  "prev_hash": "00005775777c0ffac9b911c304214400df2038e84623ccc7132714008362207c",
+                  "nonce": 81027,
+                  "hash": "0000d8be13e5eff053ec564fd2a0b823c13cc839c0c1d3d0f579962966f0c6de"
+                }
+              ]
+            },
+            "f223743": {
+              "student": {
+                "name": "Zainab",
+                "roll": "f223743"
+              },
+              "chain": [
+                {
+                  "index": 0,
+                  "timestamp": 1763254279516,
+                  "transactions": {
+                    "type": "GENESIS_STUDENT",
+                    "student": {
+                      "name": "Zainab",
+                      "roll": "f223743"
+                    }
+                  },
+                  "prev_hash": "0000e00017680c2b2ce91f4585af9bd2fa8bdf3eb3237d37f880bd5296aaeed1",
+                  "nonce": 9684,
+                  "hash": "00000c6d316fc90118709470ce4c683179f3b792929780863129b657f4397ef4"
+                },
+                {
+                  "index": 1,
+                  "timestamp": 1763254279556,
+                  "transactions": {
+                    "type": "STUDENT_ADD",
+                    "roll": "f223743",
+                    "name": "Zainab"
+                  },
+                  "prev_hash": "00000c6d316fc90118709470ce4c683179f3b792929780863129b657f4397ef4",
+                  "nonce": 81051,
+                  "hash": "000017b3ec0a10e1d6236178e1e992219fc73b7cfd47424822cf128f1160d7cd"
+                }
+              ]
+            }
+          }
+        },
+        "5C": {
+          "className": "5D",
+          "chain": [
+            {
+              "index": 0,
+              "timestamp": 1763221717334,
+              "transactions": {
+                "type": "GENESIS_CLASS",
+                "class": "5D"
+              },
+              "prev_hash": "0000e6da2309ae675db7faaa287a7e2877d3f1db56b1e41425c845cbfd2d15bb",
+              "nonce": 2233,
+              "hash": "0000d1e2976b5193312d442368bfefeef5e93db1dc060a32940327e20892545e"
+            },
+            {
+              "index": 1,
+              "timestamp": 1763221733016,
+              "transactions": {
+                "type": "CLASS_UPDATE",
+                "oldName": "5D",
+                "newName": "5C"
+              },
+              "prev_hash": "0000d1e2976b5193312d442368bfefeef5e93db1dc060a32940327e20892545e",
+              "nonce": 13135,
+              "hash": "000024e1c2e27067042f3a8c8a2e60f47faa99b1dda44e36bd096b90d8823722"
+            }
+          ],
+          "students": {}
+        }
+      }
+    },
+    "CS": {
+      "deptName": "AI",
+      "chain": [
+        {
+          "index": 0,
+          "timestamp": 1763251650923,
+          "transactions": {
+            "type": "GENESIS",
+            "chain": "AI"
+          },
+          "prev_hash": "",
+          "nonce": 183440,
+          "hash": "000050e8b5b9b448a265b42beebf870905ef47d38e72fc791156e58078d8146c"
+        },
+        {
+          "index": 1,
+          "timestamp": 1763251661207,
+          "transactions": {
+            "type": "DEPARTMENT_UPDATE",
+            "oldName": "AI",
+            "newName": "CS",
+            "status": "active",
+            "timestamp": 1763251661207
+          },
+          "prev_hash": "000050e8b5b9b448a265b42beebf870905ef47d38e72fc791156e58078d8146c",
+          "nonce": 169537,
+          "hash": "0000ebfcc5897861231647e1385954748b16f71b5afff1e4c41aa611da9e1474"
+        }
+      ],
+      "classes": {
+        "3B": {
+          "className": "3A",
+          "chain": [
+            {
+              "index": 0,
+              "timestamp": 1763252315985,
+              "transactions": {
+                "type": "GENESIS_CLASS",
+                "class": "3A"
+              },
+              "prev_hash": "0000ebfcc5897861231647e1385954748b16f71b5afff1e4c41aa611da9e1474",
+              "nonce": 20894,
+              "hash": "0000e38433f8246b7b0dd0451a4ec49cbdb751abdce855b7fc3ac9a443e043cf"
+            },
+            {
+              "index": 1,
+              "timestamp": 1763252333229,
+              "transactions": {
+                "type": "CLASS_UPDATE",
+                "oldName": "3A",
+                "newName": "3B"
+              },
+              "prev_hash": "0000e38433f8246b7b0dd0451a4ec49cbdb751abdce855b7fc3ac9a443e043cf",
+              "nonce": 54078,
+              "hash": "0000b0a2dbb594772594f339f347235e7594eb95dc1c7530ec1e7c60cec8ee41"
+            }
+          ],
+          "students": {}
+        }
+      }
+    },
+    "AI": {
+      "deptName": "AI",
+      "chain": [
+        {
+          "index": 0,
+          "timestamp": 1763252563642,
+          "transactions": {
+            "type": "GENESIS",
+            "chain": "AI"
+          },
+          "prev_hash": "",
+          "nonce": 111984,
+          "hash": "00007b0a1735ddcb278bc8ecc0381720715fa55fc93c3c6ed32839fa88fe4207"
+        }
+      ]
+    },
+    "EE": {
+      "deptName": "EE",
+      "chain": [
+        {
+          "index": 0,
+          "timestamp": 1763254646467,
+          "transactions": {
+            "type": "GENESIS",
+            "chain": "EE"
+          },
+          "prev_hash": "",
+          "nonce": 62858,
+          "hash": "00000bb5f0155c1541fe94837dcbf41f2f061462ebc7cf40d01403783303c460"
+        }
+      ]
+    }
+  }
+}

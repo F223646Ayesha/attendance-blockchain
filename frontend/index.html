@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BAMS – Blockchain Attendance</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-slate-100">
+
+  <!-- Top Navigation -->
+  <nav class="sticky top-0 z-20 bg-slate-950/80 backdrop-blur border-b border-slate-800/70">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-center justify-between h-16">
+        <!-- Brand -->
+        <div class="flex items-center gap-2">
+          <div class="h-9 w-9 rounded-xl bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-indigo-500/40">
+            B
+          </div>
+          <div>
+            <div class="text-sm font-semibold tracking-wide text-slate-100">
+              Blockchain Attendance
+            </div>
+            <div class="text-xs text-slate-400">
+              BAMS – Tamper-proof academic records
+            </div>
+          </div>
+        </div>
+
+        <!-- Nav Links -->
+        <div class="flex items-center gap-2 text-sm font-medium">
+          <button id="nav-search"
+                  onclick="loadPage('search')"
+                  class="px-3 py-1.5 rounded-full text-slate-200/90 hover:text-white hover:bg-slate-800/80 transition">
+            Search
+          </button>
+          
+          <button id="nav-departments"
+                  onclick="loadPage('departments')"
+                  class="px-3 py-1.5 rounded-full text-slate-200/90 hover:text-white hover:bg-slate-800/80 transition">
+            Departments
+          </button>
+          <button id="nav-classes"
+                  onclick="loadPage('classes')"
+                  class="px-3 py-1.5 rounded-full text-slate-200/90 hover:text-white hover:bg-slate-800/80 transition">
+            Classes
+          </button>
+          <button id="nav-students"
+                  onclick="loadPage('students')"
+                  class="px-3 py-1.5 rounded-full text-slate-200/90 hover:text-white hover:bg-slate-800/80 transition">
+            Students
+          </button>
+          <button id="nav-attendance"
+                  onclick="loadPage('attendance')"
+                  class="px-3 py-1.5 rounded-full text-slate-200/90 hover:text-white hover:bg-slate-800/80 transition">
+            Attendance
+          </button>
+          <button id="nav-explorer"
+                  onclick="loadPage('explorer')"
+                  class="px-3 py-1.5 rounded-full text-slate-200/90 hover:text-white hover:bg-slate-800/80 transition">
+            Explorer
+          </button>
+          <button id="nav-validation"
+                  onclick="loadPage('validation')"
+                  class="px-3 py-1.5 rounded-full text-slate-200/90 hover:text-white hover:bg-slate-800/80 transition">
+            Validation
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Application Container -->
+  <main id="app" class="max-w-6xl mx-auto px-4 py-8"></main>
+
+  <!-- Scripts -->
+  <script src="api.js"></script>
+  <script src="components.js"></script>
+  <script src="ui.js"></script>
+
+  <!-- Page Files -->
+  <script src="pages/departments.js"></script>
+  <script src="pages/classes.js"></script>
+  <script src="pages/students.js"></script>
+  <script src="pages/attendance.js"></script>
+  <script src="pages/validation.js"></script>
+  <script src="pages/explorer.js"></script>
+  <script src="pages/search.js"></script>
+
+  <!-- Global Router -->
+  <script>
+    const NAV_IDS = {
+      search: "nav-search",
+      explorer: "nav-explorer",
+      departments: "nav-departments",
+      classes: "nav-classes",
+      students: "nav-students",
+      attendance: "nav-attendance",
+      validation: "nav-validation",
+    };
+
+    function setActiveNav(page) {
+      Object.values(NAV_IDS).forEach(id => {
+        const btn = document.getElementById(id);
+        if (!btn) return;
+        btn.classList.remove(
+          "bg-indigo-500/90",
+          "text-white",
+          "shadow-md",
+          "shadow-indigo-500/40"
+        );
+      });
+
+      const activeId = NAV_IDS[page];
+      if (activeId) {
+        const activeBtn = document.getElementById(activeId);
+        if (activeBtn) {
+          activeBtn.classList.add(
+            "bg-indigo-500/90",
+            "text-white",
+            "shadow-md",
+            "shadow-indigo-500/40"
+          );
+        }
+      }
+    }
+
+    function loadPage(page) {
+      localStorage.setItem("lastPage", page);
+      setActiveNav(page);
+
+      if (page === "departments") return loadDepartmentsPage();
+      if (page === "classes") return loadClassesPage();
+      if (page === "students") return loadStudentsPage();
+      if (page === "attendance") return loadAttendancePage();
+      if (page === "validation") return loadValidationPage();
+      if (page === "explorer") return loadExplorerPage();
+      if (page === "search") return loadSearchPage();
+    }
+
+    // Load last visited page on refresh
+    window.onload = () => {
+      const last = localStorage.getItem("lastPage") || "departments";
+      loadPage(last);
+    };
+  </script>
+
+</body>
+</html>
