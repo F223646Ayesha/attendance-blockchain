@@ -1,4 +1,4 @@
-const API_BASE = "https://attendance-blockchain.onrender.com/"; 
+const API_BASE = "https://bams-backend.onrender.com/"; 
 
 async function apiGet(url) {
     const res = await fetch(API_BASE + url);
