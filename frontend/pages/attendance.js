@@ -34,7 +34,7 @@ async function loadAttendancePage() {
         <div class="space-y-3">
           ${inputField("adept", "Department (e.g., SE, CS)")}
           ${inputField("aclass", "Class (e.g., 3A, 5B)")}
-          ${inputField("aroll", "Roll Number (e.g., f223646)")}
+          ${inputField("aroll", "Roll Number (e.g., 22F-3646)")}
 
           <div>
             <label for="astatus" class="block text-xs font-medium text-slate-300 mb-1">
