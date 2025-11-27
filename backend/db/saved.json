@@ -84,6 +84,70 @@
           }
         }
       }
+    },
+    "CS": {
+      "deptName": "CS",
+      "chain": [
+        {
+          "index": 0,
+          "timestamp": 1764217586081,
+          "transactions": {
+            "type": "GENESIS",
+            "chain": "CS"
+          },
+          "prev_hash": "",
+          "nonce": 110748,
+          "hash": "0000cf8b4d3b5fddf371de7f0860a81aeaff55ede79c7dd05bf3fe8b9f194dfe"
+        }
+      ],
+      "classes": {
+        "3A": {
+          "className": "3A",
+          "chain": [
+            {
+              "index": 0,
+              "timestamp": 1764217596364,
+              "transactions": {
+                "type": "GENESIS_CLASS",
+                "class": "3A"
+              },
+              "prev_hash": "0000cf8b4d3b5fddf371de7f0860a81aeaff55ede79c7dd05bf3fe8b9f194dfe",
+              "nonce": 4671,
+              "hash": "00001dc9ca4b7ea3393ac2e0139c998ea556b2c3b962cff58d4310c792c71619"
+            }
+          ],
+          "students": {}
+        }
+      }
+    },
+    "BBA": {
+      "deptName": "BBA",
+      "chain": [
+        {
+          "index": 0,
+          "timestamp": 1764217642088,
+          "transactions": {
+            "type": "GENESIS",
+            "chain": "BBA"
+          },
+          "prev_hash": "",
+          "nonce": 3622,
+          "hash": "0000ecc11b569b8d24f0a4710ec2543a55de540df3342ed38e16455dbdd152f6"
+        },
+        {
+          "index": 1,
+          "timestamp": 1764217647644,
+          "transactions": {
+            "type": "DEPARTMENT_DELETE",
+            "status": "deleted",
+            "name": "BBA",
+            "timestamp": 1764217647644
+          },
+          "prev_hash": "0000ecc11b569b8d24f0a4710ec2543a55de540df3342ed38e16455dbdd152f6",
+          "nonce": 74720,
+          "hash": "000040b3b4fa9f231996d72d984a90d4dd04189d1ed6f02d0f50dea8ec0e7310"
+        }
+      ]
     }
   }
 }
