@@ -1,3 +1,89 @@
 {
-  "departments": {}
+  "departments": {
+    "SE": {
+      "deptName": "SE",
+      "chain": [
+        {
+          "index": 0,
+          "timestamp": 1764216053803,
+          "transactions": {
+            "type": "GENESIS",
+            "chain": "SE"
+          },
+          "prev_hash": "",
+          "nonce": 126692,
+          "hash": "000075c599a554d066b69b43cba48fecfd186fa05bf076045e35a06badab728f"
+        }
+      ],
+      "classes": {
+        "7B": {
+          "className": "7B",
+          "chain": [
+            {
+              "index": 0,
+              "timestamp": 1764216069875,
+              "transactions": {
+                "type": "GENESIS_CLASS",
+                "class": "7B"
+              },
+              "prev_hash": "000075c599a554d066b69b43cba48fecfd186fa05bf076045e35a06badab728f",
+              "nonce": 27989,
+              "hash": "0000fbe0a6aad72b1d4ba3834b02185adad1deb3318b416474d2cb24f17e8b8c"
+            }
+          ],
+          "students": {
+            "22F-3646": {
+              "student": {
+                "name": "Ayesha",
+                "roll": "22F-3646"
+              },
+              "chain": [
+                {
+                  "index": 0,
+                  "timestamp": 1764216118156,
+                  "transactions": {
+                    "type": "GENESIS_STUDENT",
+                    "student": {
+                      "name": "Ayesha",
+                      "roll": "22F-3646"
+                    }
+                  },
+                  "prev_hash": "0000fbe0a6aad72b1d4ba3834b02185adad1deb3318b416474d2cb24f17e8b8c",
+                  "nonce": 29074,
+                  "hash": "00002ef84606beebf4432d7b871c71247bcba67d33ea133949bb92a1942d16c0"
+                },
+                {
+                  "index": 1,
+                  "timestamp": 1764216119080,
+                  "transactions": {
+                    "type": "STUDENT_ADD",
+                    "roll": "22F-3646",
+                    "name": "Ayesha"
+                  },
+                  "prev_hash": "00002ef84606beebf4432d7b871c71247bcba67d33ea133949bb92a1942d16c0",
+                  "nonce": 25830,
+                  "hash": "000083412b3b1a9cb3107f70f7ac3d6b7ccae78273b12b30c05be930661e8427"
+                },
+                {
+                  "index": 2,
+                  "timestamp": 1764216151157,
+                  "transactions": {
+                    "type": "ATTENDANCE_MARK",
+                    "roll": "22F-3646",
+                    "deptName": "SE",
+                    "className": "7B",
+                    "status": "Present",
+                    "timestamp": 1764216151155
+                  },
+                  "prev_hash": "000083412b3b1a9cb3107f70f7ac3d6b7ccae78273b12b30c05be930661e8427",
+                  "nonce": 6550,
+                  "hash": "0000f405a94578575e0f961b6db1520c783201b5fc6ef2af3d1ecdcbe85fee4a"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
 }
